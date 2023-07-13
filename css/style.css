@@ -1,0 +1,57 @@
+body, html {
+    background-color: rgb(186, 73, 73);
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+.header {
+    position: relative;
+    border-bottom: 1px solid rgba(151, 58, 58, 0.521);
+    height: 60px;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logo-img {
+    position: relative;
+    font-size: 25px;
+    font-variation-settings:
+          'FILL' 1;
+    left: 10px;
+}
+
+#name {
+    position: relative;
+    bottom: 5px;
+    left: 13px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header-options {
+    position: relative;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-options .buttons {
+    margin-right: 20px;
+    padding: 8px 10px;
+    background-color: rgba(219, 119, 119, 0.726);
+    border-radius: 5px 10px;
+    font-size: 14px;
+}
+.header-options .material-symbols-outlined {
+    position: relative;
+    font-size: 18px;
+    top: 3px;
+    font-variation-settings: 'FILL' 1;
+}
