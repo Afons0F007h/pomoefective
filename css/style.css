@@ -5,11 +5,19 @@ body, html {
     font-family: "Montserrat";
 }
 
+body {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    margin: auto;
+}
+
 .header {
     position: relative;
     border-bottom: 1px solid rgba(151, 58, 58, 0.521);
     height: 60px;
     color: white;
+    width: 100vh;
 }
 
 .logo {
@@ -17,6 +25,10 @@ body, html {
     float: left;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 #logo-img {
@@ -43,12 +55,19 @@ body, html {
 }
 
 .header-options .buttons {
+    color: rgb(240, 240, 240);
     margin-right: 20px;
     padding: 8px 10px;
     background-color: rgba(219, 119, 119, 0.726);
     border-radius: 5px 10px;
     font-size: 14px;
 }
+
+.header-options .buttons:hover {
+    cursor: pointer;
+    color: white;
+}
+
 .header-options .material-symbols-outlined {
     position: relative;
     font-size: 18px;
