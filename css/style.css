@@ -1,16 +1,16 @@
-body, html {
+body {
     background-color: rgb(186, 73, 73);
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
-    text-align: center;
+    font-family: "Nunito";
+    transition: 0.3s;
 }
 
 .header {
     border-bottom: 1px solid rgba(151, 58, 58, 0.521);
     height: 60px;
     color: white;
-    width: 120vh;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ body, html {
     color: rgb(240, 240, 240);
     margin-right: 20px;
     padding: 8px 10px;
-    background-color: rgba(219, 119, 119, 0.726);
+    background-color: rgba(255,255,255,0.1);
     border-radius: 5px 10px;
     font-size: 14px;
 }
@@ -72,9 +72,65 @@ body, html {
 
 .content {
     position: relative;
-    height: fit-content;
+    width: 250px;
     top: 30px;
-    background-color: rgba(219, 119, 119, 0.726);
-    padding: 0 90px;
-    margin: 0 400px;
+    background-color: rgba(255,255,255,0.1);
+    padding: 30px 90px;
+    margin: auto;
+    top: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-times {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timer-times button {
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.timer-times button:active {
+    transform: translateY(5%);
+}
+
+#timer {
+    position: relative;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+
+#start {
+    position: relative;
+    padding: 15px 50px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: rgb(186, 73, 73);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Nunito",sans-serif;
+    text-transform: uppercase;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    cursor: pointer;
+}
+
+#start:active {
+    box-shadow: none;
+    transform: translateY(6px);
 }
