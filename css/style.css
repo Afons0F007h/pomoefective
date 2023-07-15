@@ -75,7 +75,7 @@ body {
     width: 250px;
     top: 30px;
     background-color: rgba(255,255,255,0.1);
-    padding: 30px 90px;
+    padding: 30px 90px 50px;
     margin: auto;
     top: 30px;
     border-radius: 5px;
@@ -119,6 +119,7 @@ body {
     position: relative;
     padding: 15px 50px;
     background-color: white;
+    margin-top: 15px;
     border: none;
     border-radius: 5px;
     color: rgb(186, 73, 73);
@@ -133,4 +134,33 @@ body {
 #start:active {
     box-shadow: none;
     transform: translateY(6px);
+}
+
+.pomodoro-stats {
+    position: relative;
+    width: 250px;
+    margin: auto;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pomodoro-count {
+    color: rgba(255, 255, 255, 0.678);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#pomodoro-count:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+#wht-todo-label {
+    position: relative;
+    top: 10px;
+    color: white;
+    font-size: 18px;
 }
