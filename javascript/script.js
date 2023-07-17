@@ -20,13 +20,13 @@ let minutes = 0;
 let seconds = 0;
 
 let _pomodoro = {
-    minutes: 0,
-    seconds: 5
+    minutes: 25,
+    seconds: 0
 }
 
 let _break = {
-    minutes: 0,
-    seconds: 2
+    minutes: 5,
+    seconds: 0
 }
 
 let finish_audio = new Audio("sounds\\finished-round.wav")
