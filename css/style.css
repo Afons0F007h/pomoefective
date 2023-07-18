@@ -1,4 +1,4 @@
-body {
+body,html {
     background-color: rgb(186, 73, 73);
     margin: 0;
     padding: 0;
@@ -78,7 +78,7 @@ body {
 
 .content {
     position: relative;
-    width: 250px;
+    width: 40vh;
     top: 30px;
     background-color: rgba(255,255,255,0.1);
     padding: 30px 90px 50px;
@@ -89,6 +89,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .timer-times {
@@ -188,5 +189,9 @@ body {
 @media screen and (max-width: 700px) {
     .header {
         width: 500px;
+    }
+    .content {
+        width: 25vh;
+        transition: 0.3s;
     }
 }
