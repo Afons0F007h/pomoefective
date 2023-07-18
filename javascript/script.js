@@ -25,8 +25,8 @@ let _pomodoro = {
 }
 
 let _break = {
-    minutes: 5,
-    seconds: 0
+    minutes: 0,
+    seconds: 2
 }
 
 let finish_audio = new Audio("sounds\\finished-round.wav")
@@ -44,6 +44,8 @@ reload_label()
 
 wht_todo_label.innerHTML = toFocus
 pomodoro_.style = "background-color: rgba(0,0,0,0.15);font-weight: 600;";
+
+count_label.innerHTML="#"+localStorage.getItem("round-count")
 
 pomodoro_.addEventListener("click",()=> {
     pomodoro_.style = "background-color: rgba(0,0,0,0.15);font-weight: 600;";
@@ -82,6 +84,7 @@ count_label.addEventListener("click",()=> {
     if(confirm("Reset pomodoro count?") ===true) {
         rounds_count = 1
         count_label.innerHTML = "#"+rounds_count
+        localStorage.setItem("round-count","1")
     } else {
         // TESTING PURPOSES
     }
@@ -116,7 +119,8 @@ function start_timer() {
             changeState(state)
             if(state==="br") {
                 rounds_count++;
-                count_label.innerHTML="#"+rounds_count;
+                localStorage.setItem("round-count",rounds_count.toString())
+                count_label.innerHTML="#"+localStorage.getItem("round-count")
             }
             start.innerHTML = "start"
             pom_type="paused"
