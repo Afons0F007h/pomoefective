@@ -7,7 +7,7 @@ brDur.value =  localStorage.getItem("break-duration")
 
 closeSets.addEventListener("click",()=> {
     if(!(pomdur.value<0||brDur.value<0)) {
-        window.location.href = '\\html\\index.html'
+        window.location.href = 'index.html'
 
         localStorage.setItem("pomodoro-duration", pomdur.value)
         localStorage.setItem("break-duration", brDur.value)

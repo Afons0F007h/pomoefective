@@ -29,8 +29,8 @@ let _break = {
     seconds: 0
 }
 
-let finish_audio = new Audio("\\sounds\\finished-round.wav")
-let select_audio = new Audio("\\sounds\\select.wav")
+let finish_audio = new Audio("sounds\\finished-round.wav")
+let select_audio = new Audio("sounds\\select.wav")
 
 finish_audio.volume = 0.1
 
