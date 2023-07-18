@@ -13,6 +13,23 @@
     <link rel="icon" type="image/x-icon" href="res/favicon.png">
 </head>
 <body>
+    <style type="text/css">
+        #warning-message {
+            display: none; 
+        }
+        @media only screen and (orientation:portrait){
+            #wrapper { display:none; }
+            #warning-message { display:block; }
+        }
+        @media only screen and (orientation:landscape){
+            #warning-message { display:none; }
+        }
+    </style>
+
+    <div id="warning-message">
+        this website is only viewable in landscape mode
+    </div>
+
     <style>
         .material-symbols-outlined {
           font-variation-settings:
@@ -23,30 +40,32 @@
         }
     </style>
 
-    <div class="header">
-        <div class="logo">
-            <span class="material-symbols-outlined" id="logo-img">Check_Circle</span>
-            <span id="name">Pomodoro</span>
+    <div id="wrapper">
+        <div class="header">
+            <div class="logo">
+                <span class="material-symbols-outlined" id="logo-img">Check_Circle</span>
+                <span id="name">Pomodoro</span>
+            </div>
+    
+            <div class="header-options">
+                <span class="buttons"> <span class="material-symbols-outlined icon__">insert_chart</span> <span class="labels">Report</span> </span>
+                <span class="buttons" id="open-settings"> <a href="settings.html"><span class="material-symbols-outlined icon__">settings</span> <span class="labels">Settings</span></a></span>
+                <span class="buttons"> <span class="material-symbols-outlined icon__">account_circle</span> <span class="labels">Login</span> </span>
+            </div>
         </div>
-
-        <div class="header-options">
-            <span class="buttons"> <span class="material-symbols-outlined icon__">insert_chart</span> <span class="labels">Report</span> </span>
-            <span class="buttons" id="open-settings"> <a href="settings.html"><span class="material-symbols-outlined icon__">settings</span> <span class="labels">Settings</span></a></span>
-            <span class="buttons"> <span class="material-symbols-outlined icon__">account_circle</span> <span class="labels">Login</span> </span>
+    
+        <div class="content">
+            <div class="timer-times">
+                <button id="pomodoro">Pomodoro</button>
+                <button id="break">Break</button>
+            </div>
+            <span id="timer">00:00</span>
+            <button id="start">start</button>
         </div>
-    </div>
-
-    <div class="content">
-        <div class="timer-times">
-            <button id="pomodoro">Pomodoro</button>
-            <button id="break">Break</button>
+        <div class="pomodoro-stats">
+            <span id="pomodoro-count">#1</span>
+            <span id="wht-todo-label">Time</span>
         </div>
-        <span id="timer">00:00</span>
-        <button id="start">start</button>
-    </div>
-    <div class="pomodoro-stats">
-        <span id="pomodoro-count">#1</span>
-        <span id="wht-todo-label">Time</span>
     </div>
 </body>
 </html>
