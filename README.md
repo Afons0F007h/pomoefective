@@ -8,5 +8,7 @@ I wish you all the power needed to do what you have to do and "STAY FOCUSED"
 
 Pomoefective Team
 
+https://afons0f007h.github.io/pomoefective/
+
 # DISCLAIMER
 This is a learning project, this a (almost) copy of the website pomofocus.io, i do not want to take their website with the same code, all the code we wrote is made by us. None of the code in this project was copied from other websites.
