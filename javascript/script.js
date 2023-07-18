@@ -7,6 +7,8 @@ const wht_todo_label = document.querySelector("#wht-todo-label")
 
 const timer_label = document.querySelector("#timer")
 
+const openSets = document.querySelector("#open-settings")
+
 let hasBg_P = true;
 let hasBg_B = false;
 
@@ -16,29 +18,27 @@ let toFocus = "Time to focus!"
 let forBreak = "Time for a break!"
 
 let timer = null;
-let minutes = 0;
-let seconds = 0;
 
 let _pomodoro = {
-    minutes: 25,
+    minutes: localStorage.getItem("pomodoro-duration"),
     seconds: 0
 }
 
 let _break = {
-    minutes: 0,
-    seconds: 2
+    minutes: localStorage.getItem("break-duration"),
+    seconds: 0
 }
 
-let finish_audio = new Audio("sounds\\finished-round.wav")
-let select_audio = new Audio("sounds\\select.wav")
+let finish_audio = new Audio("\\sounds\\finished-round.wav")
+let select_audio = new Audio("\\sounds\\select.wav")
 
 finish_audio.volume = 0.1
 
 let pom_type = "start"
 let state = "br"
 
-minutes = _pomodoro.minutes;
-seconds = _pomodoro.seconds;
+let minutes = _pomodoro.minutes;
+let seconds = _pomodoro.seconds;
 
 reload_label()
 
@@ -46,6 +46,10 @@ wht_todo_label.innerHTML = toFocus
 pomodoro_.style = "background-color: rgba(0,0,0,0.15);font-weight: 600;";
 
 count_label.innerHTML="#"+localStorage.getItem("round-count")
+
+openSets.addEventListener("click",()=> {
+    
+})
 
 pomodoro_.addEventListener("click",()=> {
     pomodoro_.style = "background-color: rgba(0,0,0,0.15);font-weight: 600;";

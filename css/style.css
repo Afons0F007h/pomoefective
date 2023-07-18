@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: "Nunito";
     transition: 0.3s;
+    z-index: 1;
 }
 
 .header {
@@ -12,6 +13,7 @@ body {
     color: white;
     width: 700px;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .logo {
@@ -163,4 +165,13 @@ body {
     top: 10px;
     color: white;
     font-size: 18px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
+
+.buttons a:hover {
+    color: white;
 }
