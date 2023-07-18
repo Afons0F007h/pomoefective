@@ -47,10 +47,6 @@ pomodoro_.style = "background-color: rgba(0,0,0,0.15);font-weight: 600;";
 
 count_label.innerHTML="#"+localStorage.getItem("round-count")
 
-openSets.addEventListener("click",()=> {
-    
-})
-
 pomodoro_.addEventListener("click",()=> {
     pomodoro_.style = "background-color: rgba(0,0,0,0.15);font-weight: 600;";
     break_.style = "background-color: rgba(0,0,0,0);";
