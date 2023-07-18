@@ -7,11 +7,15 @@ body {
     z-index: 1;
 }
 
+.container {
+    z-index: 1;
+}
+
 .header {
     border-bottom: 1px solid rgba(151, 58, 58, 0.521);
     height: 60px;
     color: white;
-    width: 700px;
+    width: 70%;
     margin: 0 auto;
     z-index: 1;
 }
@@ -174,4 +178,15 @@ body {
 
 .buttons a:hover {
     color: white;
+}
+
+#settings {
+    z-index: 10;
+    position: absolute;
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        width: 500px;
+    }
 }
